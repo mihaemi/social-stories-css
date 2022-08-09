@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>SOCIAL STORIES</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body{
+            background-color: #345;
+            margin: 0;
+            color: white;
+            height: 100%;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .stories {
+            /* border: 1px dotted white; */
+            height: 33.3%;
+            white-space: nowrap;
+            font-family: Arial;
+            overflow-x: auto;
+        }
+        .stories .slide {
+            width: 23%;
+            height: 100%;
+            margin-right: 1%;
+            background-color: #fff;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-size: cover;
+            vertical-align: top;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+         .stories .slide:nth-child(1) {
+            background-image: url(av1.png);
+            background-size: auto 50%;
+            background-position: center top;
+        }
+
+        .stories i {
+            font-size: 3em;
+            margin-top: 2.5em;
+        }
+
+        .stories .slide:nth-child(2) {
+            background-image: url(img1.jpg);
+        }
+        .stories .slide:nth-child(3) {
+            background-image: url(img2.jpg);
+        }
+        .stories .slide:nth-child(4) {
+            background-image: url(img3.jpg);
+        }
+        .stories .slide:nth-child(5) {
+            background-image: url(img4.jpg);
+        }
+
+        .stories .slide .avatar {
+            display: inline-block;
+            border: 3px solid rgb(9, 9, 66);
+            width: 50%;
+            height: 32%;
+            border-radius: 100%;
+            overflow: hidden;
+            box-shadow: 0 0 5px 3px #234;
+        }
+
+        .stories .slide img {
+            width: 114%;
+            margin-left: -6%;
+            margin-top: -19%;
+        }
+
+        .stories .add-story {
+            background-color: #1137;
+            color: black;
+            padding: 1em;
+            margin-top: 14%;
+        }
+        .stories .label {
+            background-color: #1137;
+            color: white;
+            padding: 1em;
+            margin-top: 68%;
+        }
+
+        ::-webkit-scrollbar {
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+    <header> <h1> SOCIAL STORIES EXAMPLE </h1> </header>
+    <section class="stories">
+        <div class="slide">
+         <a href="#"><i class="fa-solid fa-circle-plus"></i></a>   
+         <p class="add-story">Add Story</p>
+        </div>
+
+        <div class="slide">
+            <div class="avatar">
+            <img src="av2.png" alt=""> </div>
+            <p class="label">Story Title 1</p>
+        </div>
+        <div class="slide">
+            <div class="avatar">
+            <img src="av3.png" alt=""> </div>
+            <p class="label">Story Title 2</p>
+        </div>
+        <div class="slide">
+            <div class="avatar">
+            <img src="av4.png" alt=""> </div>
+            <p class="label">Story Title 3</p>
+        </div>
+        <div class="slide">
+            <div class="avatar">
+            <img src="av5.png" alt=""> </div>
+            <p class="label">Story Title 4</p>
+        </div>
+
+    </section>
+    
+</body>
+</html>
